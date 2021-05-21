@@ -1,3 +1,88 @@
-.navbar{
-      background-color: rgb(153, 147, 147);
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #161b22;
+  justify-content: space-between;
+  padding: 16px 32px 16px 32px;
+}
+
+.navigation,
+.navbar,
+.profile {
+  display: flex;
+  align-items: center;
+  
+}
+
+.git-svg {
+  height: auto;
+  width: 32px;
+}
+
+.search-field {
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 0.1px solid gray;
+  background-color: #0d1117;
+  color: #aec7cf;
+  outline: none;
+  cursor: text;
+  font-weight: 500;
+  margin: 0px 20px;
+}
+ .search-field:focus{
+      outline: none;
+      border: none;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin-right: 16px;
+  color: white;
+}
+li:hover {
+  color: #93b8c5;
+  cursor: pointer;
+}
+
+.icon-pair {
+  display: flex;
+  align-content: center;
+}
+
+.fa-sort-down {
+  margin-left: 5px;
+}
+
+.fa-bell {
+  font-size: large;
+}
+
+
+.icon {
+  color: white;
+  margin-right: 20px;
+}
+
+.profile-image {
+  height: auto;
+  width: 20px;
+  display: flex;
+}
+.profile-image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
