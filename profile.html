@@ -54,8 +54,62 @@
         </div>
       </div>
 
-      .
-      <p id="p">Can you see this inner Text here before the data?</p>
+      <div class="profile-body">
+        <div class="bio-column">
+          <div class="identity">
+            <img src="./images/me.jpg" alt="avatar" />
+            <div class="name">
+              <h3>Samuel Valentine</h3>
+              <p class="login">valentinesamuel</p>
+            </div>
+          </div>
+          <p class="bio">
+            A self-taught front-end developer looking for the opportunity to
+            intern at any firm in order to contribute to the work environment
+            and deliver great results
+          </p>
+          <button>Edit Profile</button>
+        </div>
+        <div class="repo-column">
+          <div class="tabs">
+            <ul>
+              <li>Overview</li>
+              <li>
+                <span class="repo-no"
+                  >Repositories <span class="repNum">54</span></span
+                >
+              </li>
+              <li>Projects</li>
+              <li>Packages</li>
+            </ul>
+          </div>
+          <div class="repo-finder">
+            <input
+              type="text"
+              name="repo_name"
+              placeholder="Find a Repository.."
+            />
+            <div class="r_btn">
+              <span class="rep_btn"
+                ><button class="repo_btn">
+                  Type<i class="fas fa-sort-down"></i></button
+              ></span>
+              <span class="rep_btn"
+                ><button class="repo_btn">
+                  Language<i class="fas fa-sort-down"></i></button
+              ></span>
+              <span class="rep_btn"
+                ><button class="repo_btn">
+                  Sort<i class="fas fa-sort-down"></i></button
+              ></span>
+            </div>
+            <span class="rep_btn"
+              ><button class="repo_btn_new">New</button></span
+            >
+          </div>
+          This is the repo tab
+        </div>
+      </div>
     </main>
     <script type="module" src="./scripts/profile.js"></script>
   </body>

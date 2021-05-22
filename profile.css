@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* setup root css files */
+:root {
+  --btn-background: #21262d;
+  --btn-border: #303639;
+  --color-bg-canvas: #010409;
+  --white-text: white;
+  --grey-text: #8b949e;
+  --outline: #e0e1e2;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -25,13 +36,14 @@
   margin: 5px;
   background: white;
   position: absolute;
-  visibility:hidden ;
+  visibility: hidden;
 }
 .git-svg {
   height: auto;
   width: 32px;
 }
-.search-field {
+.search-field,
+.repo-finder input {
   padding: 5px 12px;
   border-radius: 6px;
   border: 0.1px solid gray;
@@ -105,12 +117,11 @@ li:hover {
     display: none;
   }
 
- .mobile-bar span {
-     visibility: visible;
-     display: flex;
-     position: static;
-   
-  } 
+  .mobile-bar span {
+    visibility: visible;
+    display: flex;
+    position: static;
+  }
 
   #menu {
     position: absolute;
@@ -135,4 +146,172 @@ li:hover {
     display: none;
   }
 }
-/* Enf of styling for the navigation bar */
+/* End of styling for the navigation bar */
+
+.profile-body {
+  margin-top: 24px;
+  color: var(--white-text);
+  display: flex;
+}
+
+/* Styling for bio-column */
+.bio-column {
+  width: 20%;
+  color: black;
+}
+.bio-column img {
+  height: auto;
+  border-radius: 50%;
+  width: 100%;
+  margin-top: 24px;
+  border: 1.5px solid var(--border);
+}
+.bio-column h3 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.bio-column .login {
+  color: var(--grey-text);
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+.bio {
+  color: black;
+  width: 100%;
+  line-height: 1.6rem;
+}
+button {
+  width: 100%;
+  line-height: 20px;
+  padding: 5px 16px;
+  border-color: var(--grey-text);
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+/* Media queries for the bio-body */
+@media (max-width: 480px) {
+  .profile-body {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .bio-column {
+    background-color: var(--color-bg-canvas);
+    width: 100%;
+  }
+  .bio-column img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1.5px solid gray;
+  }
+  .identity {
+    display: flex;
+    align-items: center;
+  }
+  .bio-column h3 {
+    font-size: 1.4rem;
+  }
+}
+/* End of styling for the profile body */
+
+/* Styling for repo-column */
+.repo-column {
+  width: 100%;
+}
+.tabs {
+  border-bottom: 1px solid var(--outline);
+  width: 100%;
+  padding: 0 16px;
+  z-index: 2;
+}
+.tabs li {
+  padding: 8px 16px;
+  color: var(--grey-text);
+}
+.repo-finder {
+  display: flex;
+  padding: 16px 0px;
+  border-bottom: 1px solid var(--outline);
+}
+.repo-finder input {
+  padding: 5px 10px;
+  width: 100%;
+  background-color: white;
+}
+.repo_btn,
+.repo_btn_new {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--outline);
+  margin-right: 10px;
+  color: black;
+  background-color: white;
+  outline: none;
+  width: fit-content;
+}
+.repo_btn_new {
+  margin-left: 30px;
+  background-color: green;
+}
+.r_btn {
+  display: flex;
+}
+@media (max-width: 480px) {
+  .tabs {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .tabs li {
+    padding: 0px 0px;
+    font-size: 0.9rem;
+    margin: 0px 10px 0px 0px;
+  }
+  .repo-no .repNum {
+    background-color: gray;
+    padding: 4px;
+    font-size: 10px;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .repo-finder,
+  .repo-finder input {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0;
+  }
+  .repo-finder input {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  .repo-finder :last-child {
+    order: -1;
+  }
+  .r_btn {
+    display: flex;
+    margin: 2px;
+  }
+  .r_btn :nth-child(3) {
+    order: 2;
+  }
+  .repo_btn,
+  .repo_btn_new {
+    margin: 0px;
+}
+.repo_btn{
+flex-direction: row-reverse;}
+  .repo_btn_new {
+    width: 100%;
+ display: flex;
+ justify-content: center;
+    margin-bottom: 20px;
+  }
+}
