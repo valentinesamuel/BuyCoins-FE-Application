@@ -18,7 +18,14 @@
 .profile {
   display: flex;
   align-items: center;
-  
+}
+.mobile-bar span {
+  height: 2px;
+  width: 20px;
+  margin: 5px;
+  background: white;
+  position: absolute;
+  visibility:hidden ;
 }
 
 .git-svg {
@@ -31,15 +38,18 @@
   border-radius: 6px;
   border: 0.1px solid gray;
   background-color: #0d1117;
-  color: #aec7cf;
+  color: white;
   outline: none;
   cursor: text;
   font-weight: 500;
   margin: 0px 20px;
 }
- .search-field:focus{
-      outline: none;
-      border: none;
+.search-field:focus {
+  outline: none;
+  border: none;
+}
+.search-field::placeholder {
+  color: #cacaca;
 }
 
 ul {
@@ -69,7 +79,6 @@ li:hover {
   font-size: large;
 }
 
-
 .icon {
   color: white;
   margin-right: 20px;
@@ -85,4 +94,45 @@ li:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+@media (max-width: 480px) {
+  .navigation {
+    width: 55%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search-field {
+    display: none;
+  }
+
+ .mobile-bar span {
+     visibility: visible;
+     display: flex;
+     position: static;
+   
+  } 
+
+  #menu {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+
+  #menu.active {
+    display: flex;
+    visibility: visible;
+    margin-top: 20px;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    width: fit-content;
+    padding: 20px;
+    background-color: #0d1117;
+    line-height: 3rem;
+  }
+
+  .icon-pair {
+    display: none;
+  }
 }

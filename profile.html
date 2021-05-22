@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="profile.css">
-      <title>User Profile Page</title>
-</head>
-<body >
-<main>
-<div class="navbar">
-      <div class="navigation">
-      <img class="git-svg" src="./images/pngfind.com-github-logo-png-1766942.png" alt="github_logo">
-      <input type="text" name="search" class="search-field" placeholder="Search or jump to...">
-      <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+    <title>User Profile Page</title>
+  </head>
+  <body>
+    <main>
+      <div class="navbar">
+        <div class="navigation">
+          <div class="mobile-bar" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img
+            class="git-svg"
+            src="./images/pngfind.com-github-logo-png-1766942.png"
+            alt="github_logo"
+          />
+          <input
+            type="text"
+            name="search"
+            class="search-field"
+            placeholder="Search or jump to..."
+          />
+          <ul id="menu">
             <li>Pull Requests</li>
             <li>Issues</li>
             <li>Codespaces</li>
             <li>Marketplace</li>
             <li>Explore</li>
-      </ul>
-</div>
-      <div class="profile">
-            <i class="far icon fa-bell"></i>
-           <div class="icon-pair icon"><i class="fas fa-plus"></i><i class="fas fa-sort-down"></i> </div> 
-            <div class="profile-image icon icon-pair"><img src="./images/me.jpg" alt="profle_image"><i class="fas fa-sort-down"></i></div>
+          </ul>
+        </div>
+        <div class="profile">
+          <i class="far icon fa-bell"></i>
+          <div class="icon-pair icon">
+            <i class="fas fa-plus"></i><i class="fas fa-sort-down"></i>
+          </div>
+          <div class="profile-image icon icon-pair">
+            <img src="./images/me.jpg" alt="profle_image" /><i
+              class="fas fa-sort-down"
+            ></i>
+          </div>
+        </div>
       </div>
-</div>
 
       <p id="p">Can you see this inner Text here before the data?</p>
-</main>
-      <script type="module" src="./scripts/profile.js"></script>
-</body>
+    </main>
+    <script type="module" src="./scripts/profile.js"></script>
+  </body>
 </html>
