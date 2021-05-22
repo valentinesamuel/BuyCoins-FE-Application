@@ -6,13 +6,13 @@
   font-family: "Inter", sans-serif;
 }
 
+/* Styling for the navigation bar */
 .navbar {
   width: 100%;
   background-color: #161b22;
   justify-content: space-between;
   padding: 16px 32px 16px 32px;
 }
-
 .navigation,
 .navbar,
 .profile {
@@ -27,12 +27,10 @@
   position: absolute;
   visibility:hidden ;
 }
-
 .git-svg {
   height: auto;
   width: 32px;
 }
-
 .search-field {
   padding: 5px 12px;
   border-radius: 6px;
@@ -95,6 +93,7 @@ li:hover {
   width: 100%;
   object-fit: cover;
 }
+/* Media queries for the navigation bar */
 @media (max-width: 480px) {
   .navigation {
     width: 55%;
@@ -136,3 +135,4 @@ li:hover {
     display: none;
   }
 }
+/* Enf of styling for the navigation bar */
