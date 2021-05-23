@@ -251,18 +251,7 @@ button {
 .tabs li {
   padding: 8px 16px;
   color: var(--grey-text);
-}
-/* .repo-no::after {
-  content: "";
-  position: relative;
-  top: 0;
-   color: firebrick;
-  background-color: firebrick;
-  left: 25px;
-  height: 20px;
-  width: 100%;
-  border-bottom: 1px solid orangered;
-} */
+} 
 .repo-no .repNum {
   background-color: gray;
   padding: 4px;
@@ -372,12 +361,14 @@ button {
   align-items: center;
   color: gray;
 }
-
+.repo-description{
+  margin-bottom: 10px;
+  line-height: 1.3rem;
+}
 .lng-color {
   margin-right: 10px;
   height: 12px;
   width: 12px;
-  background-color: rgb(0, 255, 42);
   border-radius: 50%;
 }
 .lng-name {

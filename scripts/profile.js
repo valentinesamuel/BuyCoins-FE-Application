@@ -15,33 +15,31 @@ const inuptedUsername = localStorage.getItem("user")
 const repoNames = ['👩', '👨', '🧑', '👧', '👦', '👶', '🧒', '👵', '👴', '🧓', '👩‍🦰', '👨‍🦰', '👩‍🦱', '👨‍🦱', '👨‍🦲', '👳‍♂️', '🙆‍♀️', '🙆‍♂️', '🧏‍♀️', '🧏‍♂️', '💁‍♀️', '💁‍♂️', '🙋‍♀️', '🙋‍♂️']
 
 
- var  data = await getUserData(inuptedUsername)
-console.log(data);
+var data = await getUserData(inuptedUsername)
 dispatchData(data)
-// fetch data and put it in a variable
-// assign the various data to their respective container through their variable => Executed by dispatch data
-// collect the repos array and put it in a variable that will replace the repoNames variable
-//
+
 async function dispatchData(UserData) {
-      // console.log(UserData.data.user.avatarUrl)
-      bioImage.src = UserData.data.user.avatarUrl;    
+      bioImage.src = UserData.data.user.avatarUrl;
       navImage.src = UserData.data.user.avatarUrl;
       username.innerText = UserData.data.user.login;
       name.innerText = UserData.data.user.name;
-      bio.innerText =UserData.data.user.bio;
-      // createRepoList()
+      bio.innerText = UserData.data.user.bio;
+      createRepoList(UserData.data.user.repositories)
 }
 
-function createRepoList(listofRepos) {
-      setTimeout(() => {
-            listofRepos.forEach(eleme => {
-                  const repo = document.createElement('div')
-                  repo.classList.add('repository')
-                  const repoMarkup = `<div class="repo-desc">
-              <h3 class="repo-name"><a href="#">${eleme}</a></h3>
+function createRepoList(repos) {
+      repos.edges.forEach(ele => {
+            console.log(ele)
+            const repoLanguage = ele.node.languages.nodes
+
+            const repo = document.createElement('div')
+            repo.classList.add('repository')
+            const repoMarkup = `<div class="repo-desc">
+              <h3 class="repo-name"><a href="${ele.node.url} target="_blank">${ele.node.name}</a></h3>
+              <span class="repo-description">${ele.node.description}</span>
               <span>
-                <div class="lng-color"></div>
-                <span class="lng-name">TypeScript</span>
+                <div class="lng-color"style="background-color:${repoLanguage[0].color};"></div>
+                <span class="lng-name">${repoLanguage[0].name === "null" ? "d" : repoLanguage[0].name}</span>
                 <span class="last-updated">Updated 3 days ago</span>
               </span>
             </div>
@@ -49,11 +47,13 @@ function createRepoList(listofRepos) {
               <button>Star</button>
             </div>`
 
-                  repo.innerHTML = "";
-                  repo.innerHTML = repoMarkup;
-                  repoList.appendChild(repo);
-            })
-      }, 2000);
+            repo.innerHTML = "";
+            repo.innerHTML = repoMarkup;
+            repoList.appendChild(repo);
+      })
+
+
+
 }
 
 form.value = inuptedUsername
@@ -65,3 +65,11 @@ mobMenu.addEventListener('click', e => {
 })
 
 
+/*   var update = "2021-05-21T23:44:06Z"
+ update= update.split("T").join(",").toString().replace(/-/g,"/").replace(/Z/g,"")
+ update = new Date(update)
+ currentDate = new Date()
+ var time_difference = currentDate.getTime() - update.getTime();
+ var result = time_difference / (1000 * 60 * 60 * 24);
+
+ console.log(Math.round(result))*/
