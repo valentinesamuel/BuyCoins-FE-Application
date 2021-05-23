@@ -47,10 +47,13 @@ function createRepoList(repos) {
                 <div class="lng-color"style="background-color:${repoLanguage[0].color};"></div>
                 <span class="lng-name">${repoLanguage[0].name}</span>
                 <span class="last-updated">Updated ${getLastUpdated(ele.node.updatedAt)} days ago</span>
+                <span class="stars"><i class="far fa-star"></i><p>3</p></span>
+                <span class="forks"> <i class="fas fa-code-branch"></i><p>4</p></span>
+                 
               </span>
             </div>
             <div class="repo-status">
-              <button>Star</button>
+              <button><i class="far fa-star"></i>Star</button>
             </div>`
 
             repo.innerHTML = "";

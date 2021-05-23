@@ -17,6 +17,15 @@
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
+.far, .fas{
+  margin-right: 10px;
+}
+@media (max-width: 480px) {
+  .far, .fas{
+  margin-right: 0px;
+  display: none;
+}
+}
 
 /* Styling for the navigation bar */
 .navbar {
@@ -385,4 +394,18 @@ button {
 }
 .repo-status button {
   border: 1px solid var(--grey-text);
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.stars, .forks{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.forks p, .stars p {font-size: 17px;}
+.fa-star, .fa-code-branch{
+margin-right: 0px;
+margin-left: 10px;
+}
+
