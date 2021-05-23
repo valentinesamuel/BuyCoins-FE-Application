@@ -22,12 +22,14 @@
             <span></span>
             <span></span>
           </div>
-          <img
-            class="git-svg"
-            src="./images/pngfind.com-github-logo-png-1766942.png"
-            alt="github_logo"
-          />
+          <a href="./index.html">
+            <img
+              class="git-svg"
+              src="./images/pngfind.com-github-logo-png-1766942.png"
+              alt="github_logo"
+          /></a>
           <input
+            id="form"
             type="text"
             name="search"
             class="search-field"
@@ -47,23 +49,25 @@
             <i class="fas fa-plus"></i><i class="fas fa-sort-down"></i>
           </div>
           <div class="profile-image icon icon-pair">
-            <img src="./images/me.jpg" alt="profle_image" /><i
-              class="fas fa-sort-down"
-            ></i>
+            <img
+              src="./images/me.jpg"
+              alt="profle_image"
+              id="nav-profile-image"
+            /><i class="fas fa-sort-down"></i>
           </div>
         </div>
       </div>
 
-      <div class="profile-body">
+      <div class="profile-body" id="body">
         <div class="bio-column">
           <div class="identity">
-            <img src="./images/me.jpg" alt="avatar" />
+            <img src="./images/me.jpg" alt="avatar" id="bio-profile-image" />
             <div class="name">
-              <h3>Samuel Valentine</h3>
-              <p class="login">valentinesamuel</p>
+              <h3 id="name">Samuel Valentine</h3>
+              <p class="login" id="username">valentinesamuel</p>
             </div>
           </div>
-          <p class="bio">
+          <p class="bio" id="bio">
             A self-taught front-end developer looking for the opportunity to
             intern at any firm in order to contribute to the work environment
             and deliver great results
@@ -107,10 +111,11 @@
               ><button class="repo_btn_new">New</button></span
             >
           </div>
-          <div class="repository-list" id="repo-list" style="background-color: rgb(243, 243, 243);">
-         
-            <!-- list of repo should go here -->
-          </div>
+          <div
+            class="repository-list"
+            id="repo-list"
+            style="background-color: rgb(243, 243, 243)"
+          ></div>
         </div>
       </div>
     </main>

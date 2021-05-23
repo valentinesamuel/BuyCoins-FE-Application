@@ -15,6 +15,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Styling for the navigation bar */
@@ -151,7 +152,7 @@ li:hover {
 /* End of styling for the navigation bar */
 
 .profile-body {
-  margin : 30px auto 0 auto;
+  margin: 30px auto 0 auto;
   padding: 0px 32px 0px 32px;
   color: var(--white-text);
   display: flex;
@@ -159,9 +160,9 @@ li:hover {
 
 /* Styling for bio-column */
 .bio-column {
-  padding: 0 0px 0 0px;
   height: 100%;
   width: 33%;
+  margin-right: 20px;
   color: black;
 }
 .bio-column img {
@@ -191,7 +192,7 @@ button {
   width: 100%;
   line-height: 20px;
   padding: 5px 16px;
-  border:1px solid var(--grey-text);
+  border: 1px solid var(--grey-text);
   cursor: pointer;
   background-color: white;
   outline: none;
@@ -244,12 +245,30 @@ button {
   border-bottom: 1px solid var(--outline);
   width: 100%;
   padding: 0 16px;
-  margin-bottom: 20px;
+
   z-index: 2;
 }
 .tabs li {
   padding: 8px 16px;
   color: var(--grey-text);
+}
+/* .repo-no::after {
+  content: "";
+  position: relative;
+  top: 0;
+   color: firebrick;
+  background-color: firebrick;
+  left: 25px;
+  height: 20px;
+  width: 100%;
+  border-bottom: 1px solid orangered;
+} */
+.repo-no .repNum {
+  background-color: gray;
+  padding: 4px;
+  font-size: 10px;
+  color: white;
+  border-radius: 50%;
 }
 .repo-finder {
   display: flex;
@@ -293,14 +312,6 @@ button {
     font-size: 0.9rem;
     margin: 0px 10px 0px 0px;
   }
-  .repo-no .repNum {
-    background-color: gray;
-    padding: 4px;
-    font-size: 10px;
-    color: white;
-    border-radius: 50%;
-  }
-
   .repo-finder,
   .repo-finder input {
     flex-direction: column;
