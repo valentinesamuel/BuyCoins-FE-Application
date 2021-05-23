@@ -47,50 +47,19 @@ To run this project on your local machine:,
   - The extension will automatically open the page on your browser
 
 
-<!-- Here is a sample instruction:
-
-To use this project, first clone the repo on your device using the command below:
-
-```git init```
-
-```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
-
-# Usage
-[(Back to top)](#table-of-contents)
-
-<!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
-
 # Development
 [(Back to top)](#table-of-contents)
 
-<!-- This is the place where you give instructions to developers on how to modify the code.
+This is the place where you give instructions to developers on how to modify the code.
 
 You could give **instructions in depth** of **how the code works** and how everything is put together.
 
 You could also give specific instructions to how they can setup their development environment.
 
-Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. -->
+Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. 
 
-# License
+
+# Quote
 [(Back to top)](#table-of-contents)
+A good writer possesses not only his own spirit but also the spirit of his friends. - Friedrich Nietzsche 
 
-<!-- Adding the license to README is a good practice so that people can easily refer to it.
-
-Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub > Set file name to LICENSE > GitHub shows LICENSE templates > Choose the one that best suits your project!
-
-I personally add the name of the license and provide a link to it like below. -->
-
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
-
-# Footer
-[(Back to top)](#table-of-contents)
-
-<!-- Let's also add a footer because I love footers and also you **can** use this to convey important info.
-
-Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
-
-Leave a star in GitHub, give a clap in Medium and share this guide if you found this helpful.
-
-<!-- Add the footer here -->
-
-<!-- ![Footer](https://github.com/navendu-pottekkat/awesome-readme/blob/master/fooooooter.png) -->
