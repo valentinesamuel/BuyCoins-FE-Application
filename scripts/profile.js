@@ -30,17 +30,23 @@ async function dispatchData(UserData) {
 function createRepoList(repos) {
       repos.edges.forEach(ele => {
             console.log(ele)
-            const repoLanguage = ele.node.languages.nodes
+            const repoLanguage = ele.node.languages.nodes 
+            if (ele.node.languages.nodes.length === 0) {
+                  const madecolor = { color: "white", name: "no-color" }
+                  ele.node.languages.nodes.push(madecolor)
+            } else {
+                  console.log("something from language");
+            }
 
             const repo = document.createElement('div')
             repo.classList.add('repository')
             const repoMarkup = `<div class="repo-desc">
               <h3 class="repo-name"><a href="${ele.node.url} target="_blank">${ele.node.name}</a></h3>
-              <span class="repo-description">${ele.node.description}</span>
+              <span class="repo-description">${ele.node.description == null ? "" : ele.node.description}</span>
               <span>
                 <div class="lng-color"style="background-color:${repoLanguage[0].color};"></div>
-                <span class="lng-name">${repoLanguage[0].name === "null" ? "d" : repoLanguage[0].name}</span>
-                <span class="last-updated">Updated 3 days ago</span>
+                <span class="lng-name">${repoLanguage[0].name}</span>
+                <span class="last-updated">Updated ${getLastUpdated(ele.node.updatedAt)} days ago</span>
               </span>
             </div>
             <div class="repo-status">
@@ -65,11 +71,13 @@ mobMenu.addEventListener('click', e => {
 })
 
 
-/*   var update = "2021-05-21T23:44:06Z"
- update= update.split("T").join(",").toString().replace(/-/g,"/").replace(/Z/g,"")
- update = new Date(update)
- currentDate = new Date()
- var time_difference = currentDate.getTime() - update.getTime();
- var result = time_difference / (1000 * 60 * 60 * 24);
 
- console.log(Math.round(result))*/
+function getLastUpdated (rawTime) {
+ rawTime= rawTime.split("T").join(",").toString().replace(/-/g,"/").replace(/Z/g,"")
+ rawTime = new Date(rawTime)
+let currentDate = new Date()
+ let time_difference = currentDate.getTime() - rawTime.getTime();
+ let result = time_difference / (1000 * 60 * 60 * 24);
+      return Math.round(result);
+}
+

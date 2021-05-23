@@ -156,6 +156,7 @@ li:hover {
   padding: 0px 32px 0px 32px;
   color: var(--white-text);
   display: flex;
+  width: 95%;
 }
 
 /* Styling for bio-column */
@@ -351,10 +352,11 @@ button {
   flex-direction: column;
 }
 .repo-desc a {
+ color:#0366d6;
   text-decoration: none;
 }
 .repo-name {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .repo-desc span {
   display: flex;
@@ -362,8 +364,11 @@ button {
   color: gray;
 }
 .repo-description{
-  margin-bottom: 10px;
-  line-height: 1.3rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 14px;
+  width: 95%;
+  
 }
 .lng-color {
   margin-right: 10px;
