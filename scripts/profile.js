@@ -14,20 +14,22 @@ const inuptedUsername = localStorage.getItem("user")
 
 const repoNames = ['👩', '👨', '🧑', '👧', '👦', '👶', '🧒', '👵', '👴', '🧓', '👩‍🦰', '👨‍🦰', '👩‍🦱', '👨‍🦱', '👨‍🦲', '👳‍♂️', '🙆‍♀️', '🙆‍♂️', '🧏‍♀️', '🧏‍♂️', '💁‍♀️', '💁‍♂️', '🙋‍♀️', '🙋‍♂️']
 
-createRepoList(repoNames)
-const data = await getUserData(inuptedUsername)
+
+ var  data = await getUserData(inuptedUsername)
 console.log(data);
-dispatchData()
+dispatchData(data)
 // fetch data and put it in a variable
 // assign the various data to their respective container through their variable => Executed by dispatch data
 // collect the repos array and put it in a variable that will replace the repoNames variable
 //
-function dispatchData() {
-      console.log(bioImage.src)
-      console.log(navImage.src)
-      console.log(username.innerText)
-      console.log(name.innerText)
-      console.log(bio.innerText)
+async function dispatchData(UserData) {
+      // console.log(UserData.data.user.avatarUrl)
+      bioImage.src = UserData.data.user.avatarUrl;    
+      navImage.src = UserData.data.user.avatarUrl;
+      username.innerText = UserData.data.user.login;
+      name.innerText = UserData.data.user.name;
+      bio.innerText =UserData.data.user.bio;
+      // createRepoList()
 }
 
 function createRepoList(listofRepos) {

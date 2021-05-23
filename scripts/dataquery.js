@@ -1,8 +1,4 @@
 import { Personal_Access_Token } from "../config.js";
-export function getout(order) {
-      return console.log(`Get outta here, ${order}`)
-}
-
 
 
 export function getUserData(ghUsername) {
