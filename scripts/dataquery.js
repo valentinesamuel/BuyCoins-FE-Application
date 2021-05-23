@@ -1,3 +1,4 @@
+import { Personal_Access_Token } from "../config.js";
 export function getout(order) {
       return console.log(`Get outta here, ${order}`)
 }
@@ -46,7 +47,7 @@ function queryFetch(query, variables) {
       return fetch("https://api.github.com/graphql", {
             method: "POST",
             headers: {
-                  Authorization: "Bearer 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"
+                  Authorization: `Bearer ${Personal_Access_Token}`
             },
             body: JSON.stringify({
                   query: query,

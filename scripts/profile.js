@@ -1,4 +1,5 @@
 import { getUserData } from "./dataquery.js";
+
 const form = document.getElementById("form");
 
 const mobMenu = document.getElementById("mobile-menu");
@@ -14,7 +15,8 @@ const inuptedUsername = localStorage.getItem("user")
 const repoNames = ['👩', '👨', '🧑', '👧', '👦', '👶', '🧒', '👵', '👴', '🧓', '👩‍🦰', '👨‍🦰', '👩‍🦱', '👨‍🦱', '👨‍🦲', '👳‍♂️', '🙆‍♀️', '🙆‍♂️', '🧏‍♀️', '🧏‍♂️', '💁‍♀️', '💁‍♂️', '🙋‍♀️', '🙋‍♂️']
 
 createRepoList(repoNames)
-
+const data = await getUserData(inuptedUsername)
+console.log(data);
 dispatchData()
 // fetch data and put it in a variable
 // assign the various data to their respective container through their variable => Executed by dispatch data
