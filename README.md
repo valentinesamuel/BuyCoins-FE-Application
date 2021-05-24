@@ -7,7 +7,8 @@
 
 <!-- Describe your project in brief -->
 
-This project was made in order to fufill one of the requirements for the application of a Frontend Engineering position at [**BuyCoins**](https://buycoins.africa/)
+This project was made in order to fufill one of the requirements for the application of a Frontend Engineering position at [**BuyCoins**](https://buycoins.africa/).
+On the home-page, you can input the registered github username and click on the "find user" button. The website will take the user to the repos page where all the neccessary details about the queried user will be loaded. Including the repositories
 
 ### Share on Twitter
 ![Tweet](https://img.shields.io/twitter/url?style=flat-square&logo=twitter&url=https%3A%2F%2Fnavendu.me%2Fnsfw-filter%2Findex.html)
@@ -15,18 +16,11 @@ This project was made in order to fufill one of the requirements for the applica
 
 <!-- Add a demo for your project -->
 
-<!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.
+<!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description -->
 
-Here is a random GIF as a placeholder.
-
-![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif) -->
+https://user-images.githubusercontent.com/67756784/119285791-b69d2400-bbf7-11eb-98c1-8c262363d83b.mp4
 
 # Table of contents
-
-<!-- After you have introduced your project, it is a good idea to add a **Table of contents** or **TOC** as **cool** people say it. This would make it easier for people to navigate through your README and find exactly what they are looking for.
-
-Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
-
 - [Project Title](#project-title)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
@@ -40,7 +34,6 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 To run this project on your local machine:,
 - Clone the repo to your local machine
-- Install Live Server VSCode extension [here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - Go to the index.html file
 - Right click inside the file
 - Click open with live server
@@ -50,13 +43,11 @@ To run this project on your local machine:,
 # Development
 [(Back to top)](#table-of-contents)
 
-This is the place where you give instructions to developers on how to modify the code.
-
-You could give **instructions in depth** of **how the code works** and how everything is put together.
-
-You could also give specific instructions to how they can setup their development environment.
-
-Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration. 
+After following the installation process,
+- Create a github personal access token. You see how to do that [here](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+- Go the root of the project folder and create a "pass.js" file
+- Inside the pass.js file copy this => export const PAT = "Your Personal Access Token Goes Here"
+- Install Live Server VSCode extension [here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 
 # Quote
