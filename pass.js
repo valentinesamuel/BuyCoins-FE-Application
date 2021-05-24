@@ -1,1 +1,1 @@
-export const PAT = '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';
+export const PAT = github token goes here
