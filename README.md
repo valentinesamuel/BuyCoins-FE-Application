@@ -7,7 +7,7 @@
 
 <!-- Describe your project in brief -->
 
-This project in order to fufill one of the requirements for the application of a Frontend Engineering position at [**BuyCoins**](https://buycoins.africa/)
+This project was made in order to fufill one of the requirements for the application of a Frontend Engineering position at [**BuyCoins**](https://buycoins.africa/)
 
 ### Share on Twitter
 ![Tweet](https://img.shields.io/twitter/url?style=flat-square&logo=twitter&url=https%3A%2F%2Fnavendu.me%2Fnsfw-filter%2Findex.html)
