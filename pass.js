@@ -1,0 +1,1 @@
+export const PAT = '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';

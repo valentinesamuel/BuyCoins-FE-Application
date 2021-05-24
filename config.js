@@ -1,1 +1,0 @@
-export const Personal_Access_Token = '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';

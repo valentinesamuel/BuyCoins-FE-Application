@@ -1,4 +1,4 @@
-import { Personal_Access_Token } from "../config.js";
+import { PAT } from "../pass.js";
 
 
 export function getUserData(ghUsername) {
@@ -44,7 +44,7 @@ function queryFetch(query, variables) {
       return fetch("https://api.github.com/graphql", {
             method: "POST",
             headers: {
-                  Authorization: `Bearer ${Personal_Access_Token}`
+                  Authorization: `Bearer ${PAT}`
             },
             body: JSON.stringify({
                   query: query,
