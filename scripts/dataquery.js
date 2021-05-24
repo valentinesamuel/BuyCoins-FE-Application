@@ -9,7 +9,8 @@ export function getUserData(ghUsername) {
     bio
     name
     login
-    repositories(last: 6,privacy: PUBLIC) {
+    repositories(last: 20,privacy: PUBLIC) {
+          totalCount
       edges {
         node {
           name

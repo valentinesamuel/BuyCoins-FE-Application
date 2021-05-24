@@ -17,14 +17,16 @@
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
-.far, .fas{
+.far,
+.fas {
   margin-right: 10px;
 }
 @media (max-width: 480px) {
-  .far, .fas{
-  margin-right: 0px;
-  display: none;
-}
+  .far,
+  .fas {
+    margin-right: 0px;
+    display: none;
+  }
 }
 
 /* Styling for the navigation bar */
@@ -165,13 +167,13 @@ li:hover {
   padding: 0px 32px 0px 32px;
   color: var(--white-text);
   display: flex;
-  width: 95%;
+  max-width: 1280px;
 }
 
 /* Styling for bio-column */
 .bio-column {
   height: 100%;
-  width: 33%;
+  width: 30%;
   margin-right: 20px;
   color: black;
 }
@@ -261,7 +263,7 @@ button {
 .tabs li {
   padding: 8px 16px;
   color: var(--grey-text);
-} 
+}
 .repo-no .repNum {
   background-color: gray;
   padding: 4px;
@@ -292,7 +294,8 @@ button {
 }
 .repo_btn_new {
   margin-left: 30px;
-  background-color: green;
+  background-color: #2ea44f;
+  color: white;
 }
 .r_btn {
   display: flex;
@@ -361,7 +364,7 @@ button {
   flex-direction: column;
 }
 .repo-desc a {
- color:#0366d6;
+  color: #0366d6;
   text-decoration: none;
 }
 .repo-name {
@@ -372,12 +375,11 @@ button {
   align-items: center;
   color: gray;
 }
-.repo-description{
+.repo-description {
   margin-bottom: 15px;
   line-height: 1.5;
   font-size: 14px;
   width: 95%;
-  
 }
 .lng-color {
   margin-right: 10px;
@@ -394,18 +396,26 @@ button {
 }
 .repo-status button {
   border: 1px solid var(--grey-text);
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.stars, .forks{
+.stars,
+.forks {
+  font-size: 12px;
   display: flex;
   align-items: center;
   margin-left: 10px;
 }
-.forks p, .stars p {font-size: 17px;}
-.fa-star, .fa-code-branch{
-margin-right: 0px;
-margin-left: 10px;
+.fa-star,
+.fa-code-branch {
+  margin-right: 5px;
+  /* margin-left: 10px; */
 }
 
+.results p {
+  color: rgb(44, 44, 44);
+  border-top: 1px solid var(--outline);
+  margin-left: 20px;
+  padding: 16px 0px;
+}

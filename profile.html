@@ -61,16 +61,14 @@
       <div class="profile-body" id="body">
         <div class="bio-column">
           <div class="identity">
-            <img src="./images/me.jpg" alt="avatar" id="bio-profile-image" />
+            <img src="" alt="avatar" id="bio-profile-image" />
             <div class="name">
-              <h3 id="name">Samuel Valentine</h3>
-              <p class="login" id="username">valentinesamuel</p>
+              <h3 id="name"></h3>
+              <p class="login" id="username"></p>
             </div>
           </div>
           <p class="bio" id="bio">
-            A self-taught front-end developer looking for the opportunity to
-            intern at any firm in order to contribute to the work environment
-            and deliver great results
+            
           </p>
           <button>Edit Profile</button>
         </div>
@@ -80,13 +78,15 @@
               <li><i class="fas fa-book-open"></i> Overview</li>
               <li>
                 <span class="repo-no"
-                  ><i class="fas fa-box"></i>Repositories <span class="repNum">54</span></span
+                  ><i class="fas fa-box"></i>Repositories
+                  <span class="repNum" id="total-repo">54</span></span
                 >
               </li>
               <li><i class="far fa-chart-bar"></i> Projects</li>
               <li><i class="fas fa-cube"></i>Packages</li>
             </ul>
           </div>
+
           <div class="repo-finder">
             <input
               type="text"
@@ -111,11 +111,12 @@
               ><button class="repo_btn_new">New</button></span
             >
           </div>
-          <div
-            class="repository-list"
-            id="repo-list"
-            style="background-color: rgb(243, 243, 243)"
-          ></div>
+          <div class="results">
+            <p >
+              <b id="queried-repo"></b> results for <b>public</b> repositories
+            </p>
+          </div>
+          <div class="repository-list" id="repo-list"></div>
         </div>
       </div>
     </main>
