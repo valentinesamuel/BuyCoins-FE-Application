@@ -5,18 +5,12 @@
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
 ![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
 
-<!-- Describe your project in brief -->
-
 This project was made in order to fufill one of the requirements for the application of a Frontend Engineering position at [**BuyCoins**](https://buycoins.africa/).
-On the home-page, you can input the registered github username and click on the "find user" button. The website will take the user to the repos page where all the neccessary details about the queried user will be loaded. Including the repositories
+On the home-page, you can input the registered github username and click on the "find user" button. The website will take the user to the repos page where all the neccessary details about the queried user will be loaded, including the repositories..
 
 ### Share on Twitter
 ![Tweet](https://img.shields.io/twitter/url?style=flat-square&logo=twitter&url=https%3A%2F%2Fnavendu.me%2Fnsfw-filter%2Findex.html)
 # Demo-Preview
-
-<!-- Add a demo for your project -->
-
-<!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description -->
 
 https://user-images.githubusercontent.com/67756784/119285791-b69d2400-bbf7-11eb-98c1-8c262363d83b.mp4
 
