@@ -1,1 +1,1 @@
-export const PAT = github token goes here
+export const PAT = "github token goes here"
