@@ -3,7 +3,7 @@
 # BuyCoins Frontend Engineer Application
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
-![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
+
 
 This project was made in order to fufill one of the requirements for the application of a Frontend Engineering position at [**BuyCoins**](https://buycoins.africa/).
 On the home-page, you can input the registered github username and click on the "find user" button. The website will take the user to the repos page where all the neccessary details about the queried user will be loaded, including the repositories..
