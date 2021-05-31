@@ -381,6 +381,8 @@ button {
   font-size: 14px;
   width: 95%;
 }
+
+
 .lng-color {
   margin-right: 10px;
   height: 12px;
@@ -393,6 +395,7 @@ button {
 }
 .last-updated {
   font-size: 12px;
+  display: none;
 }
 .repo-status button {
   border: 1px solid var(--grey-text);
@@ -418,4 +421,15 @@ button {
   border-top: 1px solid var(--outline);
   margin-left: 20px;
   padding: 16px 0px;
+}
+@media (max-width: 480px) {
+ span .stars, span .forks{
+    display: none;
+  }
+
+  
+.repo-status button {
+  align-items: center;
+  justify-content: left;
+}
 }
