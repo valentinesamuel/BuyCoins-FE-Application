@@ -382,7 +382,6 @@ button {
   width: 95%;
 }
 
-
 .lng-color {
   margin-right: 10px;
   height: 12px;
@@ -423,13 +422,46 @@ button {
   padding: 16px 0px;
 }
 @media (max-width: 480px) {
- span .stars, span .forks{
+  span .stars,
+  span .forks {
     display: none;
   }
 
-  
-.repo-status button {
-  align-items: center;
-  justify-content: left;
+  .repo-status button {
+    align-items: center;
+    justify-content: left;
+  }
 }
+
+.footer {
+  color: black;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #0366d6;
+  word-wrap: break-word;
+  margin: 0px 5px 0px 5px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+    flex-wrap:wrap ;
+text-align: center;
+justify-content: center;
+  }
+footer a{
+  line-height: 1.8rem;
+}
+  footer svg{
+    display: none;
+  }
 }

@@ -20,6 +20,7 @@ const repoNames = ['👩', '👨', '🧑', '👧', '👦', '👶', '🧒', '👵
 
 var data = await getUserData(inuptedUsername)
 dispatchData(data)
+console.log(data);
 
 async function dispatchData(UserData) {
       bioImage.src = UserData.data.user.avatarUrl;
