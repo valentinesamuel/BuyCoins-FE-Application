@@ -1,1 +1,1 @@
-export const PAT = "Personal Access Token Goes Here"
+export const PAT = "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"
